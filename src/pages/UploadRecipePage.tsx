@@ -162,14 +162,14 @@ const UploadRecipePage: React.FC = () => {
             {!isEditing && (
               <div style={{ display: 'flex', gap: '12px', marginBottom: '24px', justifyContent: 'center' }}>
                 <div onClick={() => fileInputRef.current?.click()} className="quick-action-card">
-                  <IonButton fill="" style={{ flex: 1 }}>
+                  <IonButton style={{ flex: 1 }}>
                     <IonIcon icon={documentOutline} slot="start" />
                     Upload PDF
                   </IonButton>
                   <input type="file" hidden ref={fileInputRef} accept="application/pdf" onChange={handleFileUpload} />
                 </div>
                 <div onClick={handleCamera} className="quick-action-card">
-                  <IonButton fill="" style={{ flex: 1 }}>
+                  <IonButton style={{ flex: 1 }}>
                     <IonIcon icon={cameraOutline} slot="start" />
                     Scan Doc
                   </IonButton>
