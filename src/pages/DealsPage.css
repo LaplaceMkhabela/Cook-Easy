@@ -1,0 +1,284 @@
+/* pages/PromotionsPage.css */
+.promotions-content {
+  --background: #f8f9fa;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 20px;
+}
+
+.loading-container p {
+  color: #666;
+}
+
+.stats-card {
+  border-radius: 20px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(76, 175, 80, 0.1);
+}
+
+.stat-col {
+  text-align: center;
+  padding: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-item ion-icon {
+  font-size: 32px;
+}
+
+.stat-item h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.filter-section {
+  padding: 0 20px 20px;
+}
+
+.promo-search {
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.store-filter {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.store-filter ion-segment {
+  min-width: max-content;
+}
+
+.store-filter ion-segment-button {
+  min-width: 100px;
+  --indicator-height: 3px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-state ion-icon {
+  font-size: 64px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.empty-state p {
+  color: #999;
+  margin: 0;
+}
+
+.promotions-list {
+  padding: 0 20px;
+}
+
+.promotion-card {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.promo-thumbnail {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sponsored-chip {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+}
+
+.promo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.promo-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.promo-brand {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 12px 0;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.discounted-price {
+  color: #4CAF50;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.discount-badge {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+}
+
+.promo-details {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.store-info,
+.rating-info,
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.store-info ion-icon {
+  color: #4CAF50;
+}
+
+.rating-info ion-icon {
+  color: #FFC107;
+}
+
+.location-info ion-icon {
+  color: #2196F3;
+}
+
+.validity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.validity ion-icon {
+  font-size: 1rem;
+}
+
+.add-to-cart-btn {
+  --border-radius: 12px;
+  margin-top: 10px;
+}
+
+.best-deals-card {
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.best-deals-card ion-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+}
+
+.best-price {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.savings-badge {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .stats-card {
+    margin: 10px;
+  }
+  
+  .filter-section {
+    padding: 0 10px 15px;
+  }
+  
+  .promotions-list {
+    padding: 0 10px;
+  }
+  
+  .promo-thumbnail {
+    height: 100px;
+  }
+  
+  .promo-details {
+    gap: 10px;
+  }
+}

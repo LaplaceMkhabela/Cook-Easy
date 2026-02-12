@@ -1,0 +1,87 @@
+/* Container to hold the split screen */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f2c9b8;
+}
+
+.image-hero {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.info-card {
+  flex: 1.2;
+  background-color: #f26500;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Position the SVG exactly at the seam */
+.wave-divider {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.wave-divider svg {
+  width: 100%;
+  height: 100%;
+}
+
+.content-inner {
+  text-align: center;
+  z-index: 10;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin: 10px 0;
+  color: rgb(236, 236, 236);
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+.dotted-divider {
+  margin: 40px 0;
+  border-top: 2px dotted rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+}
+
+.slogan {
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* The custom leaf-style button */
+.action-button {
+  --background: #ffffff;
+  --color: #f26500;
+  --border-radius: 50px 10px 50px 10px;
+  --padding-start: 50px;
+  --padding-end: 50px;
+  height: 55px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}

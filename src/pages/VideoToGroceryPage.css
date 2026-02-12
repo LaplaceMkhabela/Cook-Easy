@@ -1,0 +1,119 @@
+.video-grocery-content {
+  --background: #0f1115; /* Matching MenuPage dark vibe */
+  display: flex;
+  flex-direction: column;
+}
+
+.video-toolbar {
+  --background: #0f1115;
+  --color: white;
+}
+
+.back-btn-round {
+  --background: rgba(255, 255, 255, 0.1);
+  --border-radius: 50%;
+  --color: white;
+  margin-left: 10px;
+}
+
+/* Hero Section */
+.video-hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #1a1d23 0%, #0f1115 100%);
+}
+
+.hero-sparkle {
+  font-size: 50px;
+  color: #4CAF50;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px rgba(76, 175, 80, 0.4));
+}
+
+.video-hero h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.video-hero p {
+  color: #8a8d93;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Glassmorphism Input */
+.input-glass-container {
+  margin: -30px 20px 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modern-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.custom-ion-input {
+  --color: white;
+  --placeholder-color: #555;
+  font-weight: 500;
+}
+
+.generate-btn {
+  --background: #4CAF50;
+  --background-hover: #45a049;
+  --border-radius: 14px;
+  height: 56px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  --box-shadow: 0 10px 20px rgba(76, 175, 80, 0.2);
+}
+
+/* Processing Overlay */
+.processing-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 17, 21, 0.9);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.loading-box {
+  text-align: center;
+  width: 80%;
+}
+
+.loading-box h3 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.progress-wrapper {
+  margin: 20px 0;
+}
+
+.custom-progress {
+  height: 8px;
+  border-radius: 4px;
+  --progress-background: #4CAF50;
+  --buffer-background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,201 @@
+/* UploadRecipePage.css */
+
+.ion-padding {
+  --background: #f7f7f7;
+}
+
+/* Segment Styling */
+ion-segment {
+  --background: rgba(236, 43, 43, 0.05);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+ion-segment-button {
+  --indicator-color: #3d3d3d;
+  --color: #8a8d93;
+  --color-checked: #fff;
+  font-weight: 600;
+}
+
+/* Quick Action Cards (PDF/Scan) */
+.quick-action-card {
+  flex: 1;
+  background: rgba(46, 46, 46, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.quick-action-card:active {
+  transform: scale(0.96);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.quick-action-card ion-button {
+  --border-radius: 12px;
+  --color: #fff;
+  width: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Main Form Card */
+.form-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin: 0;
+  box-shadow: none;
+}
+
+/* Modern Inputs */
+.modern-input {
+  --background: rgba(0, 0, 0, 0.2);
+  --border-radius: 12px;
+  --padding-start: 16px;
+  --highlight-height: 0;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modern-input ion-label {
+  color: #3880ff !important;
+  font-size: 0.75rem !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.modern-input ion-input, 
+.modern-input ion-textarea {
+  --color: #fff;
+  font-size: 1.1rem;
+}
+
+.modern-input-sub {
+  --background: rgba(255, 255, 255, 0.05);
+  --border-radius: 10px;
+  --padding-start: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Ingredient Badges */
+ion-badge {
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  border-radius: 10px;
+  background: rgba(56, 128, 255, 0.15);
+  color: #ffca38;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+ion-badge ion-icon {
+  font-size: 14px;
+  color: #8a8d93;
+}
+
+/* Save Button */
+.main-save-btn {
+  --border-radius: 16px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 1rem;
+  --background:#1b941b;
+  box-shadow: 0 8px 16px rgba(56, 128, 255, 0.2);
+}
+
+/* Recipe List View */
+.recipe-list-card {
+  background: rgba(199, 199, 199, 0.863);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 12px;
+  transition: transform 0.2s ease;
+}
+
+.recipe-list-card:active {
+  transform: scale(0.98);
+}
+
+.recipe-thumb {
+  width: 48px;
+  height: 48px;
+  background: rgba(56, 128, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3880ff;
+  font-size: 24px;
+}
+
+.recipe-list-card h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.recipe-list-card p {
+  color: #8a8d93;
+  font-size: 0.85rem;
+}
+
+/* Modal Styling */
+ion-modal ion-toolbar {
+  --background: #1a1d23;
+  --color: #white;
+}
+
+ion-modal ion-content {
+  --background: #10150f;
+}
+
+h3 {
+  color: #3880ff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 24px;
+}
+
+ul {
+  padding-left: 18px;
+  color: #e0e0e0;
+  
+}
+
+li {
+  margin-bottom: 8px;
+  background:#0f1115;
+}
+
+.ai-toolbar {
+  --background: #0f1115;
+  --color: white;
+}
+
+.bg {
+  --background: #cf7917;
+  --color: white;
+}
+
+ion-item {
+  --background: #383838; /* Changes the background color of the item */
+}

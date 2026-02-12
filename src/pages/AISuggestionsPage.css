@@ -1,0 +1,163 @@
+.ai-suggestions-content {
+  --background: #0f1115; /* Dark Theme */
+}
+
+.ai-toolbar {
+  --background: #0f1115;
+  --color: white;
+}
+
+.back-btn-round {
+  --background: rgba(255, 255, 255, 0.05);
+  --border-radius: 50%;
+  --color: white;
+  margin-left: 10px;
+}
+
+/* Hero Section */
+.ai-hero {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background: linear-gradient(180deg, #1a1d23 0%, #0f1115 100%);
+}
+
+.chef-icon-wrap {
+  width: 80px;
+  height: 80px;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.hero-main-icon {
+  font-size: 40px;
+  color: #4CAF50;
+  filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.3));
+}
+
+.ai-hero h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.ai-hero p {
+  color: #8a8d93;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+/* Pantry Interaction Area */
+.pantry-input-container {
+  margin: 0 20px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+}
+
+.modern-pantry-input {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 4px 8px 4px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.pantry-input-field {
+  --color: white;
+  --placeholder-color: #555;
+  font-weight: 500;
+}
+
+.add-ing-btn {
+  --color: #4CAF50;
+  font-size: 24px;
+}
+
+/* Ingredient Cloud */
+.ingredient-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+  min-height: 40px;
+}
+
+.pantry-chip {
+  --background: rgba(76, 175, 80, 0.1);
+  --color: white;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 10px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.close-chip {
+  color: #ff4d4d;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.empty-note {
+  font-style: italic;
+  color: #444;
+  width: 100%;
+  text-align: center;
+}
+
+/* Button */
+.magic-generate-btn {
+  --background: #4CAF50;
+  --background-hover: #45a049;
+  --border-radius: 16px;
+  height: 60px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  --box-shadow: 0 10px 25px rgba(76, 175, 80, 0.25);
+}
+
+/* Thinking Overlay */
+.ai-thinking-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 17, 21, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.thinking-content {
+  text-align: center;
+  width: 80%;
+}
+
+.thinking-content h3 {
+  color: white;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.thinking-progress {
+  margin: 15px 0;
+  height: 6px;
+  border-radius: 3px;
+  --progress-background: #4CAF50;
+}
+
+.thinking-content p {
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

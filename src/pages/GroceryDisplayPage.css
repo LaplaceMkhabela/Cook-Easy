@@ -1,0 +1,123 @@
+.grocery-display-content {
+  --background: #0f1115;
+}
+
+.grocery-toolbar {
+  --background: #0f1115;
+  --color: white;
+}
+
+/* Hero Section */
+.grocery-hero {
+  padding: 30px 20px;
+  background: linear-gradient(180deg, #1a1d23 0%, #0f1115 100%);
+  text-align: center;
+}
+
+.total-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.total-glass-card p {
+  color: #8a8d93;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.75rem;
+}
+
+.total-glass-card h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+/* Actions */
+.action-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-circle {
+  --background: rgba(255, 255, 255, 0.05);
+  --color: white;
+  --border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.shop-btn {
+  --border-radius: 25px;
+  height: 50px;
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+/* List Styling */
+.list-container {
+  padding: 0 20px 100px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0 15px;
+}
+
+.category-header h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.category-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.modern-list {
+  background: transparent;
+  padding: 0;
+}
+
+.modern-item {
+  --background: rgba(255, 255, 255, 0.02);
+  --padding-start: 15px;
+  --padding-end: 15px;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.check-box {
+  font-size: 22px;
+  color: #444;
+  margin-right: 15px;
+}
+
+.modern-item h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.modern-item p {
+  color: #8a8d93;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
