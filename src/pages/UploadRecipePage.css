@@ -1,7 +1,7 @@
 /* UploadRecipePage.css */
 
 .ion-padding {
-  --background: #f7f7f7;
+  --background: #1a1d23;
 }
 
 /* Segment Styling */
@@ -192,10 +192,22 @@ li {
 }
 
 .bg {
-  --background: #cf7917;
+  --background: #1a1d23;
   --color: white;
 }
 
 ion-item {
   --background: #383838; /* Changes the background color of the item */
+}
+
+.list-md {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: var(--ion-item-background, var(--ion-background-color, #1a1d23));
 }
